@@ -1,9 +1,17 @@
+// problem link: https://leetcode.com/problems/valid-sudoku/
+
+#include <bits/stdc++.h>
+#include<unordered_map>
+#include <unordered_set>
+
+using namespace std;
+
 class Solution {
 public:
-    bool isValidSudoku(vector<vector<char>>& b) {
-        vector<unordered_set<char>> row(9);
-        vector<unordered_set<char>> col(9);
-        vector<unordered_set<char>> box(9);
+    bool isValidSudoku(vector<vector<char> >& b) {
+        vector<unordered_set<char> > row(9);
+        vector<unordered_set<char> > col(9);
+        vector<unordered_set<char> > box(9);
 
         for(int i=0 ; i<9 ; i ++){
             for(int j=0 ; j<9 ; j++){
@@ -21,3 +29,7 @@ public:
         return true;
     }
 };
+
+int main() {
+    Solution s;
+}
