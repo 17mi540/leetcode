@@ -1,0 +1,1 @@
+cat ./template.cpp > solutions/$1
