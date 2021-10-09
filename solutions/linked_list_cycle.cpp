@@ -1,3 +1,17 @@
+// problem link: https://leetcode.com/problems/linked-list-cycle
+
+#include <bits/stdc++.h>
+#include<unordered_map>
+#include <unordered_set>
+
+using namespace std;
+
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode(int x) : val(x), next(NULL) {}
+};
+
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
@@ -17,3 +31,7 @@ public:
         return false;
     }
 };
+
+int main() {
+    Solution s;
+}
